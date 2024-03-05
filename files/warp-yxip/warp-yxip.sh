@@ -207,7 +207,7 @@ menu(){
     echo -e " ${GREEN}1.${PLAIN} WARP IPv4 Endpoint IP 优选 ${YELLOW}(默认)${PLAIN}"
     echo -e " ${GREEN}2.${PLAIN} WARP IPv6 Endpoint IP 优选"
     echo " -------------"
-    echo -e " ${GREEN}0.${PLAIN} 退出脚本添加TG电报群组https://t.me/youzaiYYDS"
+    echo -e " ${GREEN}0.${PLAIN} 添加TG电报群组https://t.me/youzaiYYDS"
     echo ""
     read -rp "悠哉提示：请输入选项 [0-2]: " menuInput
     case $menuInput in
