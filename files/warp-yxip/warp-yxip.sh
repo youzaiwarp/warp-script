@@ -199,7 +199,7 @@ menu(){
     echo " -------------"
     echo -e " ${GREEN}0.${PLAIN} 退出脚本"
     echo ""
-    read -rp "请输入选项 [0-2]: " menuInput
+    read -rp "悠哉：请输入选项 [0-2]: " menuInput
     case $menuInput in
         2 ) endpoint6 ;;
         0 ) exit 1 ;;
