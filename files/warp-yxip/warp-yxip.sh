@@ -194,11 +194,11 @@ endpoint6(){
 menu(){
     clear
     echo "#############################################################"
-    echo -e "# ${RED}WARP Endpoint IP 悠哉一键优选IP脚本${PLAIN}        #"
-    echo -e "# ${GREEN}悠哉${PLAIN}:         综合资源交流分享群组        #"
-    echo -e "# ${GREEN}免费分享${PLAIN}:      综合资源交流分享频道       #"
-    echo -e "# ${GREEN}资源交流${PLAIN}:            TG                  #"
-    echo -e "# ${GREEN}永久免费${PLAIN}:            电报                #"
+    echo -e "# ${RED}WARP Endpoint IP 悠哉一键优选IP脚本${PLAIN}     #"
+    echo -e "# ${GREEN}悠哉${PLAIN}:         综合资源交流分享群组      #"
+    echo -e "# ${GREEN}免费分享${PLAIN}:      综合资源交流分享频道     #"
+    echo -e "# ${GREEN}资源交流${PLAIN}:            TG                 #"
+    echo -e "# ${GREEN}永久免费${PLAIN}:            电报               #"
     echo -e "# ${GREEN}Telegram 频道${PLAIN}: https://t.me/youzaiV587  #"
     echo -e "# ${GREEN}Telegram 群组${PLAIN}: https://t.me/youzaiYYDS  #"
     echo -e "# ${GREEN}悠哉bot${PLAIN}:  @youzaixxxlbot                #"
