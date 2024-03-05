@@ -193,13 +193,23 @@ endpoint6(){
 
 menu(){
     clear
+    echo "#############################################################"
+    echo -e "# ${RED}WARP Endpoint IP 悠哉一键优选IP脚本${PLAIN}        #"
+    echo -e "# ${GREEN}悠哉${PLAIN}:         综合资源交流分享群组        #"
+    echo -e "# ${GREEN}免费分享${PLAIN}:      综合资源交流分享频道       #"
+    echo -e "# ${GREEN}资源交流${PLAIN}:            TG                  #"
+    echo -e "# ${GREEN}永久免费${PLAIN}:            电报                #"
+    echo -e "# ${GREEN}Telegram 频道${PLAIN}: https://t.me/youzaiV587  #"
+    echo -e "# ${GREEN}Telegram 群组${PLAIN}: https://t.me/youzaiYYDS  #"
+    echo -e "# ${GREEN}悠哉bot${PLAIN}:  @youzaixxxlbot                #"
+    echo "#############################################################"
     echo ""
     echo -e " ${GREEN}1.${PLAIN} WARP IPv4 Endpoint IP 优选 ${YELLOW}(默认)${PLAIN}"
     echo -e " ${GREEN}2.${PLAIN} WARP IPv6 Endpoint IP 优选"
     echo " -------------"
-    echo -e " ${GREEN}0.${PLAIN} 退出脚本"
+    echo -e " ${GREEN}0.${PLAIN} 退出脚本添加TG电报群组https://t.me/youzaiYYDS"
     echo ""
-    read -rp "悠哉提示请输入选项 [0-2]: " menuInput
+    read -rp "悠哉提示：请输入选项 [0-2]: " menuInput
     case $menuInput in
         2 ) endpoint6 ;;
         0 ) exit 1 ;;
