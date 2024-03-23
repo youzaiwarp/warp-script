@@ -32,8 +32,8 @@ endpointyx(){
     # 删除之前的优选结果文件，以避免出错
     rm -f result.csv
 
-    # 下载优选工具软件，感谢 GitHub 项目：https://github.com/peanut996/CloudflareWarpSpeedTest
-    wget https://gitlab.com/Misaka-blog/warp-script/-/raw/main/files/warp-yxip/warp-linux-$(archAffix) -O warp
+    # 下载优选工具软件，感谢 悠哉免费分享 电报TG群组：https://t.me/youzaiYYDS
+    wget https://mirror.ghproxy.com/https://raw.githubusercontent.com/youzaiwarp/warp-script/main/files/warp-yxip/warp-linux-$(archAffix) -O warp
     
     # 取消 Linux 自带的线程限制，以便生成优选 Endpoint IP
     ulimit -n 102400
