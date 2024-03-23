@@ -62,8 +62,8 @@ endpointyx(){
 menu(){
     clear
     echo "#############################################################"
-    echo -e "# ${RED}WARP Endpoint IP 悠哉一键优选脚本${PLAIN}            #"
-    echo -e "# ${GREEN}电报TG群组${PLAIN}: 综合资源交流分享                #"
+    echo -e "# ${RED}WARP Endpoint IP 悠哉一键优选脚本${PLAIN}         #"
+    echo -e "# ${GREEN}电报TG群组${PLAIN}: 综合资源交流分享              #"
     echo -e "# ${GREEN}群组${PLAIN}: https://t.me/youzaiYYDS            #"
     echo -e "# ${GREEN}频道${PLAIN}: https://t.me/youzaiV587            #"
     echo -e "# ${GREEN}免费${PLAIN}:                                    #"
