@@ -53,7 +53,7 @@ endpointyx(){
     echo ""
     yellow "优选 IP 使用方法如下："
     yellow "1. 将 WARP 的 WireGuard 节点的默认的 Endpoint IP：engage.cloudflareclient.com:2408 替换成本地网络最优的 Endpoint IP"
-    yellow "使用教程：https://blog.misaka.rest/2023/01/25/wireguard-warp"
+    yellow "使用教程加tg电报群：https://t.me/youzaiYYDS"
 
     # 删除 WARP Endpoint IP 优选工具及其附属文件
     rm -f warp
@@ -62,14 +62,14 @@ endpointyx(){
 menu(){
     clear
     echo "#############################################################"
-    echo -e "#               ${RED}WARP Endpoint IP 一键优选脚本${PLAIN}               #"
-    echo -e "# ${GREEN}作者${PLAIN}: MisakaNo の 小破站                                  #"
-    echo -e "# ${GREEN}博客${PLAIN}: https://blog.misaka.rest                            #"
-    echo -e "# ${GREEN}GitHub 项目${PLAIN}: https://github.com/Misaka-blog               #"
-    echo -e "# ${GREEN}GitLab 项目${PLAIN}: https://gitlab.com/Misaka-blog               #"
-    echo -e "# ${GREEN}Telegram 频道${PLAIN}: https://t.me/misakanocchannel              #"
-    echo -e "# ${GREEN}Telegram 群组${PLAIN}: https://t.me/misakanoc                     #"
-    echo -e "# ${GREEN}YouTube 频道${PLAIN}: https://www.youtube.com/@misaka-blog        #"
+    echo -e "# ${RED}WARP Endpoint IP 悠哉一键优选脚本${PLAIN}            #"
+    echo -e "# ${GREEN}电报TG群组${PLAIN}: 综合资源交流分享                #"
+    echo -e "# ${GREEN}群组${PLAIN}: https://t.me/youzaiYYDS            #"
+    echo -e "# ${GREEN}频道${PLAIN}: https://t.me/youzaiV587            #"
+    echo -e "# ${GREEN}免费${PLAIN}:                                    #"
+    echo -e "# ${GREEN}分享${PLAIN}:                                    #"
+    echo -e "# ${GREEN}交流${PLAIN}:                                    #"
+    echo -e "# ${GREEN}悠哉${PLAIN}:                                    #"
     echo "#############################################################"
     echo ""
     echo -e " ${GREEN}1.${PLAIN} WARP IPv4 Endpoint IP 优选 ${YELLOW}(默认)${PLAIN}"
@@ -77,7 +77,7 @@ menu(){
     echo " -------------"
     echo -e " ${GREEN}0.${PLAIN} 退出脚本"
     echo ""
-    read -rp "请输入选项 [0-2]: " menuInput
+    read -rp "悠哉提示请输入选项 [0-2]: " menuInput
     case $menuInput in
         2 ) endpointyx 6 ;;
         0 ) exit 1 ;;
