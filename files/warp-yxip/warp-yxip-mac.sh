@@ -36,8 +36,8 @@ archAffix(){
 }
 
 endpointyx(){
-    # 下载优选工具软件，感谢某匿名网友的分享的优选工具
-    wget https://gitlab.com/Misaka-blog/warp-script/-/raw/main/files/warp-yxip/warp-darwin-$(archAffix) -O warp
+    # 下载优选工具软件，感谢悠哉免费分享电报TG群组：https://t.me/youzaiYYDS
+    wget https://mirror.ghproxy.com/https://raw.githubusercontent.com/youzaiwarp/warp-script/main/files/warp-yxip/warp-darwin-$(archAffix) -O warp
     
     # 启动 WARP Endpoint IP 优选工具
     chmod +x warp && ./warp >/dev/null 2>&1
