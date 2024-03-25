@@ -58,20 +58,20 @@ else
 	colo=$(grep -w "($(echo ${temp[@]} | sed -e 's/ /\n/g' | grep colo= | cut -f 2- -d'='))" colo.txt | awk -F"-" '{print $1}')
 fi
 clear
-echo "优选IP $anycast"
-echo "公网IP $publicip"
+echo "悠哉优选IP $anycast"
+echo "保密公网IP $publicip"
 if [ $tls == 1 ]
 then
 	echo "支持端口 443 2053 2083 2087 2096 8443"
 else
 	echo "支持端口 80 8080 8880 2052 2082 2086 2095"
 fi
-echo "设置带宽 $bandwidth Mbps"
-echo "实测带宽 $realbandwidth Mbps"
-echo "峰值速度 $max kB/s"
-echo "往返延迟 $avgms 毫秒"
-echo "数据中心 $colo"
-echo "总计用时 $[$endtime-$starttime] 秒"
+echo "悠哉提示设置带宽 $bandwidth Mbps"
+echo "悠哉提示实测带宽 $realbandwidth Mbps"
+echo "悠哉提示峰值速度 $max kB/s"
+echo "悠哉提示往返延迟 $avgms 毫秒"
+echo "数悠哉提示据中心 $colo"
+echo "悠哉提示总计用时 $[$endtime-$starttime] 秒"
 }
 
 function rtthttps(){
