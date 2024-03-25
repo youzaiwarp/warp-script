@@ -328,9 +328,9 @@ do
 			n=$(ls rtt | grep txt | wc -l)
 			if [ $n -ne 0 ]
 			then
-				echo "$(date +'%H:%M:%S') 等待RTT测试结束,剩余进程数 $n"
+				echo "$(date +'%H:%M:%S') 悠哉提示等待RTT测试结束,剩余进程数 $n"
 			else
-				echo "$(date +'%H:%M:%S') RTT测试完成"
+				echo "$(date +'%H:%M:%S') 悠哉提示RTT测试完成"
 				break
 			fi
 			sleep 1
@@ -338,12 +338,12 @@ do
 		n=$(ls rtt | grep log | wc -l)
 		if [ $n == 0 ]
 		then
-			echo "当前所有IP都存在RTT丢包"
-			echo "继续新的RTT测试"
+			echo "悠哉提示当前所有IP都存在RTT丢包"
+			echo "悠哉提示继续新的RTT测试"
 		else
 			cat rtt/*.log > rtt.txt
 			status=0
-			echo "待测速的IP地址"
+			echo "悠哉提示待测速的IP地址"
 			cat rtt.txt | sort | awk '{print $2" 往返延迟 "$1" 毫秒"}'
 			for i in `cat rtt.txt | sort | awk '{print $1"_"$2}'`
 			do
@@ -380,8 +380,8 @@ done
 }
 
 function singlehttps(){
-read -p "请输入需要测速的IP: " ip
-read -p "请输入需要测速的端口(默认443): " port
+read -p "悠哉提示请输入需要测速的IP: " ip
+read -p "悠哉提示请输入需要测速的端口(默认443): " port
 if [ -z "$ip" ]
 then
 	echo "未输入IP"
@@ -390,7 +390,7 @@ if [ -z "$port" ]
 then
 	port=443
 fi
-echo "正在测速 $ip 端口 $port"
+echo "悠哉提示正在测速 $ip 端口 $port"
 speed_download=$(curl --resolve $domain:$port:$ip https://$domain:$port/$file -o /dev/null --connect-timeout 5 --max-time 15 -w %{speed_download} | awk -F\. '{printf ("%d\n",$1/1024)}')
 }
 
