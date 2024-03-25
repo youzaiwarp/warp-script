@@ -59,7 +59,7 @@ else
 fi
 clear
 echo "悠哉优选IP $anycast"
-echo "保密公网IP $publicip"
+echo "公网IP $publicip"
 if [ $tls == 1 ]
 then
 	echo "支持端口 443 2053 2083 2087 2096 8443"
