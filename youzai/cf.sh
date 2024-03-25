@@ -395,8 +395,8 @@ speed_download=$(curl --resolve $domain:$port:$ip https://$domain:$port/$file -o
 }
 
 function singlehttp(){
-read -p "请输入需要测速的IP: " ip
-read -p "请输入需要测速的端口(默认80): " port
+read -p "悠哉提示请输入需要测速的IP: " ip
+read -p "悠哉提示请输入需要测速的端口(默认80): " port
 if [ -z "$ip" ]
 then
 	echo "未输入IP"
@@ -405,7 +405,7 @@ if [ -z "$port" ]
 then
 	port=80
 fi
-echo "正在测速 $ip 端口 $port"
+echo "悠哉提示正在测速 $ip 端口 $port"
 if [ $(echo $ip | grep : | wc -l) == 0 ]
 then
 	speed_download=$(curl -x $ip:$port http://$domain:$port/$file -o /dev/null --connect-timeout 5 --max-time 15 -w %{speed_download} | awk -F\. '{printf ("%d\n",$1/1024)}')
@@ -460,7 +460,7 @@ do
 	echo "7. 悠哉帮你清空缓存"
 	echo "8. 悠哉帮你更新数据"
 	echo -e "0. 退出\n"
-	read -p "悠哉提示请选择菜单输入数字(默认回车直接退出0)加TG群获取最新版本https://t.me/youzaiYYDS电报群: " menu
+	read -p "悠哉提示哦请选择菜单输入数字(默认回车直接退出0)加TG群获取最新版本https://t.me/youzaiYYDS电报群: " menu
 	if [ -z "$menu" ]
 	then
 		menu=0
