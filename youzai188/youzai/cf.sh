@@ -419,7 +419,7 @@ clear
 echo "悠哉提示自动下载四个文件colo等待url等待ips-v4等待ips-v6等待后如果这些下面这些文件下载失败,可以手动访问网址下载保存至同级目录TG加群获取最新版本https://t.me/youzaiYYDS电报群"
 echo "https://mirror.ghproxy.com/https://raw.githubusercontent.com/youzaiwarp/warp-script/main/batch/yilai/colo.txt 另存为 colo.txt"
 echo "https://mirror.ghproxy.com/https://raw.githubusercontent.com/youzaiwarp/warp-script/main/batch/yilai/url.txt 另存为 url.txt"
-echo "https://mirror.ghproxy.com/https://raw.githubusercontent.com/youzaiwarp/warp-script/main/batch/yilai/ips-v4.txt 另存为 ips-v4.txt"
+echo "https://mirror.ghproxy.com/https://raw.githubusercontent.com/youzaiwarp/warp-script/main/youzai188/batch/yilai/ips-v4.txt 另存为 ips-v4.txt"
 echo "https://mirror.ghproxy.com/https://raw.githubusercontent.com/youzaiwarp/warp-script/main/batch/yilai/ips-v6.txt 另存为 ips-v6.txt"
 while true
 do
@@ -434,7 +434,7 @@ do
 	elif [ ! -f "ips-v4.txt" ]
 	then
 		echo "悠哉提示自动从服务器下载IPV4数据加TG群获取最新版本https://t.me/youzaiYYDS电报群 ips-v4.txt"
-		curl --retry 2 -s https://mirror.ghproxy.com/https://raw.githubusercontent.com/youzaiwarp/warp-script/main/batch/yilai/ips-v4.txt -o ips-v4.txt
+		curl --retry 2 -s https://mirror.ghproxy.com/https://raw.githubusercontent.com/youzaiwarp/warp-script/main/youzai188/batch/yilai/ips-v4.txt -o ips-v4.txt
 	elif [ ! -f "ips-v6.txt" ]
 	then
 		echo "悠哉提示自动从服务器下载IPV6数据加TG群获取最新版本https://t.me/youzaiYYDS电报群 ips-v6.txt"
